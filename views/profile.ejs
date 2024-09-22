@@ -1,7 +1,575 @@
-<%- include('templates/start') %>
-<%- include('templates/sidebar') %>
+<%- include('templates/start') %> <%- include('templates/sidebar') %>
 <div class="ps-96">
-    <%- include('templates/profile-page') %>
+  <div
+    class="p-4 font-bold w-full overflow-n overflow-y-scroll hide-scrollbar mb-20"
+  >
+    <!-- cover -->
+    <div class="bg-gray-900 p-4 mb-4 flex rounded-lg">
+      <div class="cont flex items-center flex-1 p-4">
+        <div class="img-container me-4">
+          <img
+            src="img/default-profile.png"
+            alt=""
+            height="180px"
+            width="180px"
+          />
+        </div>
+        <div class="desc flex flex-col text-3xl font-bold">
+          Edward Gatbonton
+          <span class="text-gray-500 font-normal text-lg mb-4">
+            edwardgatbonton13@gmail.com
+          </span>
+
+          <a
+            href=""
+            class="bg-green-500 px-4 py-2 w-28 text-center rounded-full text-sm hover:bg-green-600 active:bg-green-700 text-gray-950 font-medium"
+          >
+            Edit Profile
+          </a>
+        </div>
+      </div>
+
+      <div class="flex items-center p-4">
+        <a
+          href=""
+          class="bg-inherit border border-red-500 text-red-500 px-8 py-2 rounded-full text-lg hover:bg-red-500 active:bg-red-600 hover:text-white active:border-red-600 font-medium"
+        >
+          Sign out
+        </a>
+      </div>
+    </div>
+    <!-- playlists -->
+
+    <!-- <div class="header font-bold text-2xl flex justify-between items-center p-4">
+    Playlist
+  </div> -->
+
+    <div
+      class="header font-bold text-2xl flex justify-between items-center p-4"
+    >
+      Favorites
+      <a
+        href=""
+        class="text-lg font-normal text-gray-500 text-sm hover:text-green-500 active:text-green-600"
+      >
+        <span class="material-symbols-rounded"> chevron_right </span>
+      </a>
+    </div>
+
+    <div
+      class="mb-8 px-2 flex overflow-x-scroll overflow-hidden hide-scrollbar"
+    >
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="header font-bold text-2xl flex justify-between items-center p-4 bg--500"
+    >
+      Workout Music
+      <a
+        href=""
+        class="text-lg font-normal text-gray-500 text-sm hover:text-green-500 active:text-green-600"
+      >
+        <span class="material-symbols-rounded"> chevron_right </span>
+      </a>
+    </div>
+
+    <div
+      class="mb-8 px-2 flex overflow-x-scroll overflow-hidden hide-scrollbar"
+    >
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="header font-bold text-2xl flex justify-between items-center p-4 bg--500"
+    >
+      Just sad :((
+      <a
+        href=""
+        class="text-lg font-normal text-gray-500 text-sm hover:text-green-500 active:text-green-600"
+      >
+        <span class="material-symbols-rounded"> chevron_right </span>
+      </a>
+    </div>
+    <div
+      class="mb-8 px-2 flex overflow-x-scroll overflow-hidden hide-scrollbar"
+    >
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/ben_and_ben_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Araw-Araw</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Ben & Ben
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card bg-gray-900 p-4 rounded-lg shadow-sm w-[200px] mx-2 flex-shrink-0"
+      >
+        <div class="card-image mb-2">
+          <img
+            src="img/coj_album.jpg"
+            class="rounded"
+            alt=""
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="card-body">
+          <div class="title">Hayaan</div>
+          <div class="description text-gray-500 text-sm font-normal">
+            Cup of Joe
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<%- include('templates/playbar') %>
-<%- include('templates/end') %>
+<%- include('templates/playbar') %> <%- include('templates/end') %>
